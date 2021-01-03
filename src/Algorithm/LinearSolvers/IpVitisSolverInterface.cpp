@@ -311,4 +311,4 @@ namespace Ipopt
                      "Vitis: Solver Successful \n");
           
           return SYMSOLVER_SUCCESS;
-}
+  }

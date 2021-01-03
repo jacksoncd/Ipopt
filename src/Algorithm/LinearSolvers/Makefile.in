@@ -128,6 +128,7 @@ am_liblinsolvers_la_OBJECTS = IpLinearSolversRegOp.lo \
 	IpMa27TSolverInterface.lo IpMa57TSolverInterface.lo \
 	IpMa86SolverInterface.lo IpMa97SolverInterface.lo \
 	IpMc19TSymScalingMethod.lo IpMa77SolverInterface.lo \
+  IpVitisSolverInterface.lo xcl2.lo \
 	$(am__objects_1) $(am__objects_2) $(am__objects_3) \
 	$(am__objects_4) $(am__objects_5)
 liblinsolvers_la_OBJECTS = $(am_liblinsolvers_la_OBJECTS)
@@ -165,7 +166,9 @@ am__depfiles_remade = ./$(DEPDIR)/IpIterativeWsmpSolverInterface.Plo \
 	./$(DEPDIR)/IpTSymDependencyDetector.Plo \
 	./$(DEPDIR)/IpTSymLinearSolver.Plo \
 	./$(DEPDIR)/IpTripletToCSRConverter.Plo \
-	./$(DEPDIR)/IpWsmpSolverInterface.Plo
+	./$(DEPDIR)/IpWsmpSolverInterface.Plo \
+  ./$(DEPDIR)/IpVitisSolverInterface.Plo \
+  ./$(DEPDIR)/xcl2.Plo 
 am__mv = mv -f
 PPF77COMPILE = $(F77) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \
 	$(AM_CPPFLAGS) $(CPPFLAGS) $(AM_FFLAGS) $(FFLAGS)
@@ -454,6 +457,7 @@ liblinsolvers_la_SOURCES = IpLinearSolversRegOp.cpp \
 	IpMa27TSolverInterface.cpp IpMa57TSolverInterface.cpp \
 	IpMa86SolverInterface.cpp IpMa97SolverInterface.cpp \
 	IpMc19TSymScalingMethod.cpp IpMa77SolverInterface.cpp \
+  IpVitisSolverInterface.cpp xcl2.cpp \
 	$(am__append_1) $(am__append_2) $(am__append_3) \
 	$(am__append_4) $(am__append_5)
 AM_CPPFLAGS = \
@@ -535,6 +539,8 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/IpTSymLinearSolver.Plo@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/IpTripletToCSRConverter.Plo@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/IpWsmpSolverInterface.Plo@am__quote@ # am--include-marker
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/IpVitisSolverInterface.Plo@am__quote@ # am--include-marker
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/xcl2.Plo@am__quote@ # am--include-marker
 
 $(am__depfiles_remade):
 	@$(MKDIR_P) $(@D)
@@ -714,6 +720,8 @@ distclean: distclean-am
 	-rm -f ./$(DEPDIR)/IpTSymLinearSolver.Plo
 	-rm -f ./$(DEPDIR)/IpTripletToCSRConverter.Plo
 	-rm -f ./$(DEPDIR)/IpWsmpSolverInterface.Plo
+  -rm -f ./$(DEPDIR)/IpVitisSolverInterface.Plo
+  -rm -f ./$(DEPDIR)/xcl2.Plo
 	-rm -f Makefile
 distclean-am: clean-am distclean-compile distclean-generic \
 	distclean-tags
