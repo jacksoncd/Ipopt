@@ -22,7 +22,9 @@ liblinsolvers_la_SOURCES += \
 	IpMa86SolverInterface.cpp \
 	IpMa97SolverInterface.cpp \
 	IpMc19TSymScalingMethod.cpp \
-	IpMa77SolverInterface.cpp
+	IpMa77SolverInterface.cpp \
+  IpVitisSolverInterface.cpp \
+  xcl2.cpp
 
 if BUILD_LINEARSOLVERLOADER
   liblinsolvers_la_SOURCES += IpPardisoSolverInterface.cpp
