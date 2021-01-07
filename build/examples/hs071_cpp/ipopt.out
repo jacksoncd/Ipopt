@@ -1,0 +1,4 @@
+Exception of type: OPTION_INVALID in file "IpAlgBuilder.cpp" at line 514:
+ Exception message: IsValid(custom_solver_) evaluated false: Selected linear solver CUSTOM not available.
+
+EXIT: Invalid option encountered.

@@ -1,0 +1,1 @@
+/home/jacksoncd/git/Ipopt/tutorial/AmplExperiments/infeasible.mod

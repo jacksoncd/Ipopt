@@ -1,0 +1,1 @@
+/home/jacksoncd/git/Ipopt/contrib/RInterface/man/ipoptr-package.Rd
